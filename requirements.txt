@@ -1,0 +1,8 @@
+﻿torch
+transformers
+datasets
+accelerate
+safetensors
+numpy
+scikit-learn
+tqdm

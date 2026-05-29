@@ -1,0 +1,57 @@
+﻿baseline_xlmr_lr5e-5
+
+DATA:
+Dataset: data/jsonl
+DEPS contains base HEAD/DEPREL arcs + additional enhanced arcs.
+
+DEV threshold sweep:
+threshold	gold	pred	tp	precision	recall	f1	jaccard
+0.50	4590	22987	3629	0.1579	0.7906	0.2632	0.1515
+0.55	4590	21215	3586	0.1690	0.7813	0.2779	0.1614
+0.60	4590	19373	3528	0.1821	0.7686	0.2945	0.1726
+0.65	4590	17497	3446	0.1969	0.7508	0.3120	0.1849
+0.70	4590	15551	3357	0.2159	0.7314	0.3333	0.2000
+0.75	4590	13449	3217	0.2392	0.7009	0.3567	0.2170
+0.80	4590	11196	3006	0.2685	0.6549	0.3808	0.2352
+0.85	4590	8754	2705	0.3090	0.5893	0.4054	0.2543
+0.90	4590	6142	2262	0.3683	0.4928	0.4215	0.2671
+0.92	4590	5013	2036	0.4061	0.4436	0.4240	0.2691
+0.95	4590	3212	1538	0.4788	0.3351	0.3943	0.2455
+0.97	4590	1920	1081	0.5630	0.2355	0.3321	0.1991
+0.98	4590	1315	818	0.6221	0.1782	0.2771	0.1608
+0.99	4590	658	466	0.7082	0.1015	0.1776	0.0974
+
+BEST DEV:
+threshold = 0.92
+Precision = 0.4061
+Recall = 0.4436
+F1 = 0.4240
+Jaccard = 0.2691
+
+TEST at threshold 0.92:
+Gold edges = 4403
+Predicted edges = 4888
+True positives = 2005
+Precision = 0.4102
+Recall = 0.4554
+F1 = 0.4316
+Jaccard = 0.2752
+
+
+BASE-LAYER METRICS ON TEST FOR baseline_xlmr_lr5e-5
+
+Gold UD edges: 4300
+Predicted UD edges: 4300
+UAS correct: 2562
+LAS correct: 2281
+
+UAS: 0.5958
+LAS: 0.5305
+UD edge precision: 0.5305
+UD edge recall:    0.5305
+UD edge F1:        0.5305
+
+TOKEN-LEVEL METRICS ON TEST
+lemma_rule   correct=3358 total_known=4279 oov_skipped=11 accuracy_known=0.7848
+joint_feats  correct=3003 total_known=4264 oov_skipped=36 accuracy_known=0.7043
+misc         correct=669 total_known=669 oov_skipped=0 accuracy_known=1.0000

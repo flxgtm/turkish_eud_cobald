@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Model checkpoints and heavy outputs
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+checkpoints/
+models/
+outputs/
+runs/
+wandb/
+
+# Thesis drafts / private docs
+*.docx
+*.pdf
+~$*
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Local legacy scripts
+code/CobaldParser/legacy/
+
+# Local model artifact manifest
+experiments/trained_models_manifest.json
