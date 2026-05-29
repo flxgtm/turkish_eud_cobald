@@ -93,7 +93,3 @@ python code/CobaldParser/evaluate_eud.py --model-dir models/eud_baseline --split
 ## Зависимости
 
 Основные зависимости перечислены в файле `requirements.txt`.
-
-## Примечание
-
-Большие файлы с весами моделей не включены в репозиторий.
